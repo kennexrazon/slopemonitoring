@@ -8194,6 +8194,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R2" library="rcl" deviceset="R-EU_" device="0204/5"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0204/5"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="0204/5"/>
+<part name="FEATHER_RTC" library="pinhead" deviceset="PINHD-1X5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8210,7 +8211,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="+3V1" gate="G$1" x="180.34" y="106.68"/>
 <instance part="+3V2" gate="G$1" x="81.28" y="121.92"/>
 <instance part="RTC" gate="A" x="193.04" y="96.52" rot="R180"/>
-<instance part="+3V3" gate="G$1" x="208.28" y="104.14"/>
+<instance part="+3V3" gate="G$1" x="195.58" y="109.22"/>
 <instance part="GND4" gate="1" x="210.82" y="91.44" rot="R90"/>
 <instance part="GND5" gate="1" x="76.2" y="101.6" rot="R270"/>
 <instance part="GND6" gate="1" x="205.74" y="55.88"/>
@@ -8247,6 +8248,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="R2" gate="G$1" x="119.38" y="33.02" rot="R90"/>
 <instance part="R3" gate="G$1" x="121.92" y="33.02" rot="R90"/>
 <instance part="R4" gate="G$1" x="124.46" y="33.02" rot="R90"/>
+<instance part="FEATHER_RTC" gate="A" x="246.38" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -8357,6 +8359,12 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="121.92" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
 <junction x="121.92" y="27.94"/>
 <wire x1="121.92" y1="27.94" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+<label x="121.92" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FEATHER_RTC" gate="A" pin="1"/>
+<wire x1="243.84" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="228.6" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8391,6 +8399,11 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <pinref part="RAIN" gate="G$1" pin="3"/>
 </segment>
+<segment>
+<pinref part="RTC" gate="A" pin="5"/>
+<wire x1="195.58" y1="101.6" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="RPI_SDA" class="0">
 <segment>
@@ -8424,13 +8437,6 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="RTC" gate="A" pin="3"/>
 <wire x1="195.58" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
 <label x="200.66" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="RTC" gate="A" pin="5"/>
-<wire x1="195.58" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8558,6 +8564,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <junction x="121.92" y="53.34"/>
 <wire x1="124.46" y1="53.34" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <junction x="124.46" y="53.34"/>
+<label x="127" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -8588,16 +8595,48 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="124.46" y1="40.64" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RPI_GPIO22" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GP22"/>
-<wire x1="116.84" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
-<label x="119.38" y="83.82" size="1.778" layer="95"/>
-</segment>
+<net name="DONE_PIN" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="DONE"/>
 <wire x1="124.46" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
 <label x="124.46" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOA0"/>
+<wire x1="154.94" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FEATHER_SCL" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOSCL"/>
+<wire x1="198.12" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="FEATHER_RTC" gate="A" pin="3"/>
+<wire x1="243.84" y1="119.38" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
+<label x="220.98" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_SDA" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="GPIOSDA"/>
+<wire x1="198.12" y1="124.46" x2="205.74" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="FEATHER_RTC" gate="A" pin="4"/>
+<wire x1="243.84" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
+<label x="220.98" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FEATHER_3.3V" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="3V"/>
+<wire x1="154.94" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="FEATHER_RTC" gate="A" pin="5"/>
+<wire x1="243.84" y1="114.3" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
+<label x="220.98" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
