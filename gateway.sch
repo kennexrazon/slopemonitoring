@@ -163,36 +163,63 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="A4L-LOC">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+<symbol name="FRAME_B_L">
+<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="9" rows="6" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DINA4_L">
+<frame x1="0" y1="0" x2="264.16" y2="180.34" columns="4" rows="4" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94" font="vector">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-DIN A4, landscape with location and doc. field</description>
+<deviceset name="FRAME_B_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
 <gates>
-<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+<gate name="G$1" symbol="FRAME_B_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="325.12" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DINA4_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A4, landscape with extra doc field</description>
+<gates>
+<gate name="G$1" symbol="DINA4_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="162.56" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="">
@@ -818,57 +845,6 @@ More information available at: https://www.element14.com/community/community/ras
 <rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
 <rectangle x1="4.699" y1="-2.921" x2="5.461" y2="-1.905" layer="21"/>
 </package>
-<package name="1_05X2MM">
-<description>CON-M-1X5-200</description>
-<text x="-4.5" y="1.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.75" y="-2.75" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-5" y1="0.5" x2="-4.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="-4.5" y1="1" x2="-3.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="-3.5" y1="1" x2="-3" y2="0.5" width="0.1524" layer="21"/>
-<wire x1="-3" y1="-0.5" x2="-3.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-3.5" y1="-1" x2="-4.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-4.5" y1="-1" x2="-5" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="-5" y1="0.5" x2="-5" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="-3" y1="0.5" x2="-2.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="-2.5" y1="1" x2="-1.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="-1.5" y1="1" x2="-1" y2="0.5" width="0.1524" layer="21"/>
-<wire x1="-1" y1="-0.5" x2="-1.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-1.5" y1="-1" x2="-2.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-2.5" y1="-1" x2="-3" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="-3" y1="0.5" x2="-3" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="-1" y1="0.5" x2="-0.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="-0.5" y1="1" x2="0.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="0.5" y1="1" x2="1" y2="0.5" width="0.1524" layer="21"/>
-<wire x1="1" y1="-0.5" x2="0.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="0.5" y1="-1" x2="-0.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-0.5" y1="-1" x2="-1" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="-1" y1="0.5" x2="-1" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="1" y1="0.5" x2="1.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="1.5" y1="1" x2="2.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="1" x2="3" y2="0.5" width="0.1524" layer="21"/>
-<wire x1="3" y1="-0.5" x2="2.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="2.5" y1="-1" x2="1.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="1.5" y1="-1" x2="1" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="1" y1="0.5" x2="1" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="3" y1="0.5" x2="3.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="3.5" y1="1" x2="4.5" y2="1" width="0.1524" layer="21"/>
-<wire x1="4.5" y1="1" x2="5" y2="0.5" width="0.1524" layer="21"/>
-<wire x1="5" y1="0.5" x2="5" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="5" y1="-0.5" x2="4.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="4.5" y1="-1" x2="3.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="3.5" y1="-1" x2="3" y2="-0.5" width="0.1524" layer="21"/>
-<wire x1="3" y1="0.5" x2="3" y2="-0.5" width="0.1524" layer="21"/>
-<pad name="1" x="-4" y="0" drill="1.016" diameter="1.3" shape="square" rot="R90"/>
-<pad name="3" x="0" y="0" drill="1.016" diameter="1.3" rot="R90"/>
-<pad name="2" x="-2" y="0" drill="1.016" diameter="1.3" rot="R90"/>
-<pad name="4" x="2" y="0" drill="1.016" diameter="1.3" rot="R90"/>
-<pad name="5" x="4" y="0" drill="1.016" diameter="1.3" rot="R90"/>
-<rectangle x1="-4.254" y1="-0.254" x2="-3.746" y2="0.254" layer="51"/>
-<rectangle x1="-2.254" y1="-0.254" x2="-1.746" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="1.746" y1="-0.254" x2="2.254" y2="0.254" layer="51"/>
-<rectangle x1="3.746" y1="-0.254" x2="4.254" y2="0.254" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="PINHD5">
@@ -905,18 +881,6 @@ More information available at: https://www.element14.com/community/community/ras
 </technologies>
 </device>
 <device name="/90" package="1X05/90">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="5X2MM" package="1_05X2MM">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
@@ -3693,18 +3657,6 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-4.57" y1="-5.1" x2="-3.05" y2="5.1" layer="51"/>
 <rectangle x1="3.05" y1="-5.1" x2="4.5688" y2="5.1" layer="51"/>
 </package>
-<package name="C01005">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2" y1="-0.1" x2="-0.075" y2="0.1" layer="51"/>
-<rectangle x1="0.075" y1="-0.1" x2="0.2" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
-<smd name="1" x="-0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<smd name="2" x="0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="R0402">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
@@ -5258,6 +5210,22 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-1.4" y1="-1.6" x2="-1.1" y2="1.6" layer="51"/>
 <rectangle x1="1.1" y1="-1.6" x2="1.4" y2="1.6" layer="51" rot="R180"/>
 </package>
+<package name="C1005">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -5294,9 +5262,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0504" package="C0504">
@@ -5305,9 +5271,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0603" package="C0603">
@@ -5316,9 +5280,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0805" package="C0805">
@@ -5327,9 +5289,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C1005" package="C1005">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1206" package="C1206">
@@ -5338,9 +5307,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1210" package="C1210">
@@ -5349,9 +5316,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1310" package="C1310">
@@ -5360,9 +5325,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1608" package="C1608">
@@ -5371,9 +5334,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1812" package="C1812">
@@ -5382,9 +5343,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1825" package="C1825">
@@ -5393,9 +5352,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C2012" package="C2012">
@@ -5404,9 +5361,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C3216" package="C3216">
@@ -5415,9 +5370,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C3225" package="C3225">
@@ -5426,9 +5379,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C4532" package="C4532">
@@ -5437,9 +5388,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C4564" package="C4564">
@@ -5448,9 +5397,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-024X044" package="C025-024X044">
@@ -5459,9 +5406,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-025X050" package="C025-025X050">
@@ -5470,9 +5415,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-030X050" package="C025-030X050">
@@ -5481,9 +5424,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-040X050" package="C025-040X050">
@@ -5492,9 +5433,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-050X050" package="C025-050X050">
@@ -5503,9 +5442,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-060X050" package="C025-060X050">
@@ -5514,9 +5451,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C025_050-024X070" package="C025_050-024X070">
@@ -5525,9 +5460,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-025X075" package="C025_050-025X075">
@@ -5536,9 +5469,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-035X075" package="C025_050-035X075">
@@ -5547,9 +5478,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-045X075" package="C025_050-045X075">
@@ -5558,9 +5487,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-055X075" package="C025_050-055X075">
@@ -5569,9 +5496,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-024X044" package="C050-024X044">
@@ -5580,9 +5505,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-025X075" package="C050-025X075">
@@ -5591,9 +5514,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-045X075" package="C050-045X075">
@@ -5602,9 +5523,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-030X075" package="C050-030X075">
@@ -5613,9 +5532,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-050X075" package="C050-050X075">
@@ -5624,9 +5541,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-055X075" package="C050-055X075">
@@ -5635,9 +5550,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-075X075" package="C050-075X075">
@@ -5646,9 +5559,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050H075X075" package="C050H075X075">
@@ -5657,9 +5568,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-032X103" package="C075-032X103">
@@ -5668,9 +5577,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-042X103" package="C075-042X103">
@@ -5679,9 +5586,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-052X106" package="C075-052X106">
@@ -5690,9 +5595,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102-043X133" package="C102-043X133">
@@ -5701,9 +5604,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102-054X133" package="C102-054X133">
@@ -5712,9 +5613,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102-064X133" package="C102-064X133">
@@ -5723,9 +5622,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102_152-062X184" package="C102_152-062X184">
@@ -5734,9 +5631,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-054X183" package="C150-054X183">
@@ -5745,9 +5640,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-064X183" package="C150-064X183">
@@ -5756,9 +5649,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-072X183" package="C150-072X183">
@@ -5767,9 +5658,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-084X183" package="C150-084X183">
@@ -5778,9 +5667,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-091X182" package="C150-091X182">
@@ -5789,9 +5676,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-062X268" package="C225-062X268">
@@ -5800,9 +5685,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-074X268" package="C225-074X268">
@@ -5811,9 +5694,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-087X268" package="C225-087X268">
@@ -5822,9 +5703,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-108X268" package="C225-108X268">
@@ -5833,9 +5712,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-113X268" package="C225-113X268">
@@ -5844,9 +5721,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-093X316" package="C275-093X316">
@@ -5855,9 +5730,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-113X316" package="C275-113X316">
@@ -5866,9 +5739,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-134X316" package="C275-134X316">
@@ -5877,9 +5748,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-205X316" package="C275-205X316">
@@ -5888,9 +5757,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="325-137X374" package="C325-137X374">
@@ -5899,9 +5766,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="325-162X374" package="C325-162X374">
@@ -5910,9 +5775,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="325-182X374" package="C325-182X374">
@@ -5921,9 +5784,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="375-192X418" package="C375-192X418">
@@ -5932,9 +5793,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="375-203X418" package="C375-203X418">
@@ -5943,9 +5802,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-035X075" package="C050-035X075">
@@ -5954,9 +5811,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="375-155X418" package="C375-155X418">
@@ -5965,9 +5820,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-063X106" package="C075-063X106">
@@ -5976,9 +5829,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-154X316" package="C275-154X316">
@@ -5987,9 +5838,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-173X316" package="C275-173X316">
@@ -5998,9 +5847,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0402K" package="C0402K">
@@ -6009,9 +5856,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0603K" package="C0603K">
@@ -6020,9 +5865,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0805K" package="C0805K">
@@ -6031,9 +5874,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1206K" package="C1206K">
@@ -6042,9 +5883,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1210K" package="C1210K">
@@ -6053,9 +5892,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1812K" package="C1812K">
@@ -6064,9 +5901,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1825K" package="C1825K">
@@ -6075,9 +5910,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C2220K" package="C2220K">
@@ -6086,9 +5919,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C2225K" package="C2225K">
@@ -6097,9 +5928,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="HPC0201" package="HPC0201">
@@ -6108,9 +5937,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0201" package="C0201">
@@ -6119,9 +5946,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1808" package="C1808">
@@ -6130,9 +5955,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C3640" package="C3640">
@@ -6141,20 +5964,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="01005" package="C01005">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7134,6 +6944,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="16.383" y1="-0.381" x2="16.383" y2="18.684" width="0.127" layer="21"/>
 <wire x1="16.383" y1="18.684" x2="-1.524" y2="18.684" width="0.127" layer="21"/>
 </package>
+<package name="BNO05_BREAKOUT">
+<wire x1="0" y1="0" x2="26.67" y2="0" width="0" layer="21"/>
+<wire x1="26.67" y1="0" x2="26.67" y2="20.32" width="0" layer="21"/>
+<wire x1="26.67" y1="20.32" x2="0" y2="20.32" width="0" layer="21"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0" layer="21"/>
+<circle x="24.13" y="2.54" radius="1.27" width="0.127" layer="21"/>
+<circle x="24.13" y="2.54" radius="1.778" width="0.127" layer="21"/>
+<circle x="24.13" y="17.78" radius="1.27" width="0.127" layer="21"/>
+<circle x="24.13" y="17.78" radius="1.778" width="0.127" layer="21"/>
+<circle x="2.54" y="17.78" radius="1.27" width="0.127" layer="21"/>
+<circle x="2.54" y="17.78" radius="1.778" width="0.127" layer="21"/>
+<circle x="2.54" y="2.54" radius="1.27" width="0.127" layer="21"/>
+<circle x="2.54" y="2.54" radius="1.778" width="0.127" layer="21"/>
+<pad name="ADR" x="17.145" y="19.05" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="INT" x="14.605" y="19.05" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="PS1" x="12.065" y="19.05" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="PS0" x="9.525" y="19.05" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="VIN" x="6.985" y="1.27" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="3V3" x="9.525" y="1.27" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="GND" x="12.065" y="1.27" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="SDA" x="14.605" y="1.27" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="RST" x="19.685" y="1.27" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="SCL" x="17.145" y="1.27" drill="1.2" diameter="1.9304" shape="octagon"/>
+<hole x="2.54" y="17.78" drill="2.54"/>
+<hole x="2.54" y="2.54" drill="2.54"/>
+<hole x="24.13" y="2.54" drill="2.54"/>
+<hole x="24.13" y="17.78" drill="2.54"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MINI_360_BUCK">
@@ -7193,6 +7031,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0" y1="0" x2="10.16" y2="25.4" layer="94"/>
 <text x="0" y="27.94" size="1.27" layer="95">&gt;name</text>
 <text x="5.08" y="-2.54" size="1.27" layer="96" rot="R180">&gt;values</text>
+</symbol>
+<symbol name="BNO05_BREAKOUT">
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VIN" x="-5.08" y="15.24" visible="pin" length="middle" direction="pwr"/>
+<pin name="3V3" x="-5.08" y="12.7" visible="pin" length="middle"/>
+<pin name="GND" x="-5.08" y="10.16" visible="pin" length="middle"/>
+<pin name="SDA" x="-5.08" y="7.62" visible="pin" length="middle"/>
+<pin name="SCL" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="RST" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="PS0" x="20.32" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="PS1" x="20.32" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="INT" x="20.32" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="ADR" x="20.32" y="5.08" visible="pin" length="middle" rot="R180"/>
+<text x="0" y="20.32" size="1.27" layer="95">&gt;name</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7264,6 +7120,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="DRV" pad="DRV"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BNO05_BREAKOUT">
+<gates>
+<gate name="G$1" symbol="BNO05_BREAKOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BNO05_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="ADR" pad="ADR"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="PS0" pad="PS0"/>
+<connect gate="G$1" pin="PS1" pad="PS1"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8153,7 +8033,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="MS1" library="adafruit" deviceset="FEATHERWING" device="_NODIM"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -8180,10 +8060,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$2" library="edc_modules" deviceset="MINI_360_BUCK" device=""/>
 <part name="RPI_VIN" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
 <part name="RAIN" library="SRG" deviceset="JST-PH_3-PIN_HEADER" device=""/>
-<part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="BATT" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
-<part name="INA219" library="edc_modules" deviceset="INA219" device=""/>
+<part name="INA219" library="edc_modules" deviceset="INA219" device="" value=""/>
 <part name="PCB2" library="e14_Rpi3_RevA" deviceset="RPI3_NO_GPIO" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="RASPBERRYPI-40-PIN-GPIO" device="_PTH_NO_SHROUD"/>
 <part name="U$1" library="edc_modules" deviceset="TP5100" device=""/>
@@ -8195,6 +8074,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="rcl" deviceset="R-EU_" device="0204/5"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="0204/5"/>
 <part name="FEATHER_RTC" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="FRAME2" library="frames" deviceset="DINA4_L" device=""/>
+<part name="U$4" library="edc_modules" deviceset="BNO05_BREAKOUT" device=""/>
+<part name="TILT_SUPPLY" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8209,7 +8091,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="GND2" gate="1" x="147.32" y="154.94" rot="R270"/>
 <instance part="GND3" gate="1" x="182.88" y="101.6" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="180.34" y="106.68"/>
-<instance part="+3V2" gate="G$1" x="81.28" y="121.92"/>
+<instance part="+3V2" gate="G$1" x="76.2" y="119.38"/>
 <instance part="RTC" gate="A" x="193.04" y="96.52" rot="R180"/>
 <instance part="+3V3" gate="G$1" x="195.58" y="109.22"/>
 <instance part="GND4" gate="1" x="210.82" y="91.44" rot="R90"/>
@@ -8229,13 +8111,14 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="GND10" gate="1" x="182.88" y="53.34" rot="R90"/>
 <instance part="U$2" gate="G$1" x="213.36" y="53.34"/>
 <instance part="RPI_VIN" gate="G$1" x="226.06" y="96.52" rot="R180"/>
-<instance part="RAIN" gate="G$1" x="215.9" y="149.86" rot="R180"/>
-<instance part="P+3" gate="1" x="203.2" y="147.32" rot="R270"/>
+<instance part="RAIN" gate="G$1" x="215.9" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="218.44" y="144.018" size="1.27" layer="95" rot="R180"/>
+</instance>
 <instance part="GND11" gate="1" x="236.22" y="55.88"/>
 <instance part="BATT" gate="G$1" x="160.02" y="66.04" smashed="yes">
 <attribute name="NAME" x="154.94" y="71.882" size="1.27" layer="95" font="vector"/>
 </instance>
-<instance part="INA219" gate="G$1" x="157.48" y="96.52" rot="MR0"/>
+<instance part="INA219" gate="G$1" x="157.48" y="96.52" smashed="yes" rot="MR0"/>
 <instance part="PCB2" gate="G$1" x="5.08" y="170.18" rot="R270"/>
 <instance part="J1" gate="G$1" x="101.6" y="96.52"/>
 <instance part="U$1" gate="G$1" x="175.26" y="33.02"/>
@@ -8249,6 +8132,11 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="R3" gate="G$1" x="121.92" y="33.02" rot="R90"/>
 <instance part="R4" gate="G$1" x="124.46" y="33.02" rot="R90"/>
 <instance part="FEATHER_RTC" gate="A" x="246.38" y="119.38"/>
+<instance part="FRAME2" gate="G$2" x="325.12" y="0"/>
+<instance part="U$4" gate="G$1" x="281.94" y="149.86"/>
+<instance part="TILT_SUPPLY" gate="G$1" x="203.2" y="177.8" smashed="yes">
+<attribute name="NAME" x="200.66" y="180.34" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8366,8 +8254,13 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="243.84" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 <label x="228.6" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="276.86" y1="160.02" x2="266.7" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<label x="261.62" y="160.02" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="N$5" class="0">
+<net name="INA_VIN-" class="0">
 <segment>
 <wire x1="162.56" y1="93.98" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="INA219" gate="G$1" pin="VIN-"/>
@@ -8384,20 +8277,9 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="162.56" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<pinref part="INA219" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="86.36" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="116.84" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="3.3V@1"/>
-</segment>
-<segment>
-<wire x1="220.98" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<pinref part="RAIN" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="RTC" gate="A" pin="5"/>
@@ -8506,15 +8388,13 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="124.46" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 <label x="124.46" y="139.7" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="USB" class="0">
 <segment>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<pinref part="MS1" gate="G$1" pin="USB"/>
-<wire x1="200.66" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="TILT_SUPPLY" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="177.8" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
+<label x="182.88" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="INA_VIN+" class="0">
 <segment>
 <pinref part="FUSE" gate="A" pin="2"/>
 <wire x1="177.8" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
@@ -8530,20 +8410,13 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="162.56" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="SOLAR+" class="0">
 <segment>
 <pinref part="SOLAR" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="38.1" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="38.1" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VIN+"/>
 <wire x1="167.64" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="DRV"/>
-<wire x1="124.46" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
-<label x="124.46" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DELAY" class="0">
@@ -8610,33 +8483,99 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <segment>
 <pinref part="MS1" gate="G$1" pin="GPIOSCL"/>
 <wire x1="198.12" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
+<label x="200.66" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="FEATHER_RTC" gate="A" pin="3"/>
 <wire x1="243.84" y1="119.38" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
 <label x="220.98" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="276.86" y1="154.94" x2="266.7" y2="154.94" width="0.1524" layer="91"/>
+<label x="261.62" y="154.94" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="SCL"/>
+</segment>
 </net>
 <net name="FEATHER_SDA" class="0">
 <segment>
 <pinref part="MS1" gate="G$1" pin="GPIOSDA"/>
 <wire x1="198.12" y1="124.46" x2="205.74" y2="124.46" width="0.1524" layer="91"/>
+<label x="200.66" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="FEATHER_RTC" gate="A" pin="4"/>
 <wire x1="243.84" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <label x="220.98" y="116.84" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="276.86" y1="157.48" x2="266.7" y2="157.48" width="0.1524" layer="91"/>
+<label x="261.62" y="157.48" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="SDA"/>
+</segment>
 </net>
 <net name="FEATHER_3.3V" class="0">
 <segment>
 <pinref part="MS1" gate="G$1" pin="3V"/>
 <wire x1="154.94" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
+<label x="139.7" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="FEATHER_RTC" gate="A" pin="5"/>
 <wire x1="243.84" y1="114.3" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
 <label x="220.98" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="276.86" y1="162.56" x2="266.7" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="3V3"/>
+<label x="261.62" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="162.56" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<pinref part="INA219" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="220.98" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<pinref part="RAIN" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="MS1" gate="G$1" pin="EN"/>
+<wire x1="198.12" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="149.86" x2="205.74" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FEATHER_USB" class="0">
+<segment>
+<pinref part="TILT_SUPPLY" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="177.8" x2="215.9" y2="177.8" width="0.1524" layer="91"/>
+<label x="208.28" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MS1" gate="G$1" pin="USB"/>
+<wire x1="198.12" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="147.32" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="DRV"/>
+<wire x1="124.46" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
+<label x="124.46" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5V@2"/>
+<wire x1="86.36" y1="121.92" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="121.92" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5V@4"/>
+<wire x1="86.36" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="119.38" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
