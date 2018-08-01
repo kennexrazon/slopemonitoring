@@ -2195,9 +2195,7 @@ design rules under a new name.</description>
 <elements>
 <element name="MS1" library="adafruit" package="FEATHERWING_DIM" value="FEATHERWING_NODIM" x="94.55" y="141.03" rot="R180"/>
 <element name="RTC" library="pinhead" package="1X05" value="" x="83" y="95" rot="R270"/>
-<element name="FUSE" library="fuse" package="MF-SMDF050" value="MF-SMDF200" x="22" y="50" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.59" y="52.51" size="1.27" layer="25" rot="R270"/>
-</element>
+<element name="FUSE" library="fuse" package="MF-SMDF050" value="MF-SMDF200" x="22" y="50" smashed="yes" rot="R90"/>
 <element name="Q1" library="transistor-small-signal" package="SOT23" value="BSS123" x="11.5" y="51" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.405" y="49.095" size="1.27" layer="25" rot="R180"/>
 </element>
@@ -2206,7 +2204,10 @@ design rules under a new name.</description>
 <element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-SMT_2_NO_NO-SILK" x="7" y="47" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.857" y="47" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
-<element name="U$2" library="edc_modules" package="MINI_360_BUCK" value="MINI_360_BUCK" x="17.24" y="72.37" rot="R180"/>
+<element name="U$2" library="edc_modules" package="MINI_360_BUCK" value="MINI_360_BUCK" x="17.24" y="72.37" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.24" y="54.37" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="14.74" y="73.37" size="0.8128" layer="27" rot="R180"/>
+</element>
 <element name="RPI_VIN" library="SRG" package="JST_B2B-PH_HEADER" value="JST-PH_2-PIN_HEADER" x="7.98" y="78.99" rot="R270"/>
 <element name="RAIN" library="SRG" package="JST_B3B-PH_HEADER" value="JST-PH_3-PIN_HEADER" x="35" y="8"/>
 <element name="BATT" library="SRG" package="JST_B2B-PH_HEADER" value="JST-PH_2-PIN_HEADER" x="21" y="8"/>
@@ -2281,8 +2282,12 @@ design rules under a new name.</description>
 <element name="PAD19" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="66" y="31.5" smashed="yes" rot="R90">
 <attribute name="VALUE" x="66" y="31.5" size="0.0254" layer="27" rot="R90"/>
 </element>
-<element name="PAD13" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="87.5" y="166"/>
-<element name="PAD20" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="84" y="166"/>
+<element name="PAD13" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="83.5" y="137" smashed="yes">
+<attribute name="VALUE" x="83.5" y="137" size="0.0254" layer="27"/>
+</element>
+<element name="PAD20" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="75.5" y="137" smashed="yes">
+<attribute name="VALUE" x="75.5" y="137" size="0.0254" layer="27"/>
+</element>
 <element name="PAD21" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="73" y="137" smashed="yes">
 <attribute name="VALUE" x="73" y="137" size="0.0254" layer="27"/>
 </element>
@@ -2343,6 +2348,8 @@ design rules under a new name.</description>
 <element name="PAD40" library="wirepad" package="SMD1,27-2,54" value="WIREPADSMD1,27-254" x="67.5" y="105" smashed="yes" rot="R90">
 <attribute name="VALUE" x="67.5" y="105" size="0.0254" layer="27" rot="R90"/>
 </element>
+<element name="FUSE1" library="fuse" package="MF-SMDF050" value="MF-SMDF200" x="28" y="50" smashed="yes" rot="R90"/>
+<element name="FUSE2" library="fuse" package="MF-SMDF050" value="MF-SMDF200" x="15.5" y="76.5" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2547,6 +2554,7 @@ design rules under a new name.</description>
 <vertex x="30" y="7"/>
 <vertex x="30" y="48"/>
 </polygon>
+<contactref element="FUSE1" pad="1"/>
 </signal>
 <signal name="BATT-">
 <contactref element="Q1" pad="3"/>
@@ -2606,16 +2614,15 @@ design rules under a new name.</description>
 <wire x1="72.66" y1="64.5" x2="72.39" y2="64.77" width="0.8128" layer="1"/>
 </signal>
 <signal name="+5V">
-<contactref element="U$2" pad="OUT+"/>
 <contactref element="RPI_VIN" pad="P2"/>
 <contactref element="U$3" pad="VDD"/>
-<polygon width="0.6096" layer="1">
-<vertex x="5.5" y="82"/>
-<vertex x="5.5" y="80"/>
+<polygon width="0.6096" layer="1" thermals="no">
+<vertex x="6" y="82"/>
+<vertex x="6" y="80"/>
 <vertex x="13" y="80"/>
-<vertex x="13" y="69"/>
-<vertex x="17" y="69"/>
-<vertex x="17" y="82"/>
+<vertex x="13" y="77.5"/>
+<vertex x="18" y="77.5"/>
+<vertex x="18" y="82"/>
 </polygon>
 <wire x1="10.286" y1="127.159" x2="10.286" y2="91.286" width="1.27" layer="16"/>
 <wire x1="10.286" y1="91.286" x2="9" y2="90" width="1.27" layer="16"/>
@@ -2638,6 +2645,7 @@ design rules under a new name.</description>
 <vertex x="11" y="131.5"/>
 <vertex x="11" y="126.5"/>
 </polygon>
+<contactref element="FUSE2" pad="2"/>
 </signal>
 <signal name="INA_VIN-">
 <contactref element="INA219" pad="P$5"/>
@@ -2673,6 +2681,7 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="24.37" y1="87.504" x2="24.37" y2="81.13" width="1.016" layer="1"/>
 <wire x1="24.37" y1="81.13" x2="24.5" y2="81" width="1.016" layer="1"/>
+<contactref element="FUSE1" pad="2"/>
 </signal>
 <signal name="3.3V">
 <contactref element="J1" pad="17"/>
@@ -2966,9 +2975,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIOA1">
 <contactref element="PAD20" pad="1"/>
+<contactref element="MS1" pad="6"/>
+<wire x1="75.5" y1="139.76" x2="75.5" y2="137" width="1.016" layer="1"/>
 </signal>
 <signal name="AREF">
 <contactref element="PAD13" pad="1"/>
+<contactref element="MS1" pad="3"/>
+<wire x1="83.12" y1="139.76" x2="83.12" y2="137.38" width="1.016" layer="1"/>
+<wire x1="83.12" y1="137.38" x2="83.5" y2="137" width="1.016" layer="1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="MS1" pad="28"/>
@@ -3041,6 +3055,12 @@ design rules under a new name.</description>
 <contactref element="PAD40" pad="1"/>
 <wire x1="64.05" y1="104.935" x2="67.435" y2="104.935" width="1.016" layer="1"/>
 <wire x1="67.435" y1="104.935" x2="67.5" y2="105" width="1.016" layer="1"/>
+</signal>
+<signal name="N$8">
+<contactref element="U$2" pad="OUT+"/>
+<contactref element="FUSE2" pad="1"/>
+<wire x1="15.5" y1="74.05" x2="15.5" y2="72.51" width="1.27" layer="1"/>
+<wire x1="15.5" y1="72.51" x2="16.44" y2="71.57" width="1.27" layer="1"/>
 </signal>
 </signals>
 </board>

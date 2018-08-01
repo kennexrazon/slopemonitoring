@@ -8518,6 +8518,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="PAD38" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 <part name="PAD39" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 <part name="PAD40" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
+<part name="FUSE1" library="fuse" deviceset="MF-SMDF" device="" technology="200"/>
+<part name="FUSE2" library="fuse" deviceset="MF-SMDF" device="" technology="200"/>
 </parts>
 <sheets>
 <sheet>
@@ -8547,7 +8549,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="C2" gate="G$1" x="248.92" y="147.32"/>
 <instance part="P+1" gate="1" x="236.22" y="106.68"/>
 <instance part="GND9" gate="1" x="246.38" y="91.44" rot="R90"/>
-<instance part="P+2" gate="1" x="243.84" y="71.12"/>
+<instance part="P+2" gate="1" x="264.16" y="71.12"/>
 <instance part="JP1" gate="G$1" x="175.26" y="53.34"/>
 <instance part="GND10" gate="1" x="182.88" y="53.34" rot="R90"/>
 <instance part="U$2" gate="G$1" x="213.36" y="53.34"/>
@@ -8697,6 +8699,8 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="PAD40" gate="G$1" x="317.5" y="160.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="318.643" y="158.1658" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="FUSE1" gate="A" x="172.72" y="73.66"/>
+<instance part="FUSE2" gate="A" x="243.84" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -8911,6 +8915,9 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="BATT" gate="G$1" pin="1"/>
 <pinref part="FUSE" gate="A" pin="1"/>
 <wire x1="152.4" y1="68.58" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="FUSE1" gate="A" pin="1"/>
+<wire x1="167.64" y1="73.66" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
+<junction x="167.64" y="68.58"/>
 </segment>
 </net>
 <net name="BATT-" class="0">
@@ -8954,11 +8961,6 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="RPI_VIN" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<pinref part="U$2" gate="G$1" pin="VOUT+"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="VDD"/>
 <wire x1="124.46" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 <label x="124.46" y="139.7" size="1.778" layer="95"/>
@@ -8968,6 +8970,11 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="198.12" y1="177.8" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
 <label x="182.88" y="177.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="FUSE2" gate="A" pin="2"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="248.92" y1="68.58" x2="264.16" y2="68.58" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="INA_VIN+" class="0">
 <segment>
@@ -8976,6 +8983,9 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="INA219" gate="G$1" pin="VIN+"/>
 <wire x1="180.34" y1="68.58" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="FUSE1" gate="A" pin="2"/>
+<wire x1="177.8" y1="73.66" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
+<junction x="177.8" y="68.58"/>
 </segment>
 </net>
 <net name="SOLAR-" class="0">
@@ -9340,6 +9350,8 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <net name="GPIOA1" class="0">
 <segment>
 <wire x1="154.94" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="MS1" gate="G$1" pin="GPIOA1"/>
+<junction x="154.94" y="149.86"/>
 </segment>
 <segment>
 <pinref part="PAD20" gate="G$1" pin="P"/>
@@ -9427,6 +9439,8 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <net name="AREF" class="0">
 <segment>
 <wire x1="154.94" y1="157.48" x2="142.24" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="MS1" gate="G$1" pin="AREF"/>
+<junction x="154.94" y="157.48"/>
 </segment>
 <segment>
 <pinref part="PAD13" gate="G$1" pin="P"/>
@@ -9556,6 +9570,13 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="U$4" gate="G$1" pin="PS1"/>
 <pinref part="PAD40" gate="G$1" pin="P"/>
 <wire x1="314.96" y1="160.02" x2="302.26" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VOUT+"/>
+<pinref part="FUSE2" gate="A" pin="1"/>
+<wire x1="231.14" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
