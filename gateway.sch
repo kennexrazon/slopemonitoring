@@ -10283,6 +10283,10 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="276.86" y1="231.14" x2="266.7" y2="231.14" width="0.1524" layer="91"/>
 <label x="266.7" y="231.14" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="RST"/>
+<wire x1="276.86" y1="152.4" x2="269.24" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
