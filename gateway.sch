@@ -9246,6 +9246,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="C3" library="rcl" deviceset="C-US" device="C1812"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C1812"/>
 <part name="RAIN" library="jst" deviceset="B3B-ZR" device=""/>
+<part name="MAIN_SWITCH" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9278,9 +9279,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="U$2" gate="G$1" x="213.36" y="53.34"/>
 <instance part="RPI_VIN" gate="G$1" x="226.06" y="96.52" rot="R180"/>
 <instance part="GND11" gate="1" x="236.22" y="55.88"/>
-<instance part="BATT" gate="G$1" x="160.02" y="66.04" smashed="yes">
-<attribute name="NAME" x="154.94" y="71.882" size="1.27" layer="95" font="vector"/>
-</instance>
+<instance part="BATT" gate="G$1" x="147.32" y="66.04" smashed="yes" rot="R270"/>
 <instance part="INA219" gate="G$1" x="157.48" y="96.52" smashed="yes" rot="MR0"/>
 <instance part="PCB2" gate="G$1" x="5.08" y="170.18" rot="R270"/>
 <instance part="J1" gate="G$1" x="101.6" y="96.52"/>
@@ -9424,6 +9423,7 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="C3" gate="G$1" x="309.88" y="215.9"/>
 <instance part="C4" gate="G$1" x="320.04" y="215.9"/>
 <instance part="RAIN" gate="G$1" x="246.38" y="127" rot="R180"/>
+<instance part="MAIN_SWITCH" gate="G$1" x="160.02" y="78.74" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9641,12 +9641,13 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="198.12" y1="35.56" x2="208.28" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BATT" gate="G$1" pin="1"/>
 <pinref part="FUSE" gate="A" pin="1"/>
-<wire x1="152.4" y1="68.58" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="FUSE1" gate="A" pin="1"/>
-<wire x1="167.64" y1="73.66" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
-<junction x="167.64" y="68.58"/>
+<wire x1="167.64" y1="73.66" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="MAIN_SWITCH" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="71.12" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
+<junction x="167.64" y="71.12"/>
 </segment>
 </net>
 <net name="BATT-" class="0">
@@ -9654,11 +9655,11 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="193.04" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="58.42" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="53.34" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="53.34" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <junction x="170.18" y="53.34"/>
 <pinref part="BATT" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VOUT-"/>
@@ -10321,6 +10322,15 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="U$2" gate="G$1" pin="VOUT+"/>
 <pinref part="FUSE2" gate="A" pin="1"/>
 <wire x1="231.14" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="BATT" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="73.66" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="MAIN_SWITCH" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="71.12" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
