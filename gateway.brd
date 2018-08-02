@@ -2807,10 +2807,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="FEATHER_3.3V">
 <contactref element="MS1" pad="2"/>
-<contactref element="U$4" pad="3V3"/>
 <contactref element="INA219" pad="P$1"/>
-<wire x1="46.27" y1="105.475" x2="58.475" y2="105.475" width="1.016" layer="16"/>
-<wire x1="58.475" y1="105.475" x2="62.5" y2="109.5" width="1.016" layer="16"/>
 <wire x1="33.5" y1="14.5" x2="84.5" y2="14.5" width="1.016" layer="16"/>
 <wire x1="84.5" y1="14.5" x2="88" y2="18" width="1.016" layer="16"/>
 <wire x1="88" y1="18" x2="88" y2="89" width="1.016" layer="16"/>
@@ -2820,22 +2817,21 @@ design rules under a new name.</description>
 <wire x1="32.5" y1="19.5" x2="32.5" y2="15.5" width="1.016" layer="16"/>
 <wire x1="32.5" y1="15.5" x2="33.5" y2="14.5" width="1.016" layer="16"/>
 <wire x1="15.17" y1="103.004" x2="15.17" y2="104.67" width="1.016" layer="16"/>
-<wire x1="15.17" y1="104.67" x2="16.5" y2="106" width="1.016" layer="16"/>
-<wire x1="46.245" y1="105.5" x2="46.27" y2="105.475" width="1.016" layer="16"/>
 <wire x1="62.5" y1="109.5" x2="85.5" y2="109.5" width="1.016" layer="16"/>
 <wire x1="85.5" y1="109.5" x2="88" y2="112" width="1.016" layer="16"/>
 <wire x1="88" y1="112" x2="88" y2="133" width="1.016" layer="16"/>
 <wire x1="88" y1="133" x2="85.5" y2="135.5" width="1.016" layer="16"/>
 <wire x1="85.5" y1="135.5" x2="85.5" y2="138.1" width="1.016" layer="16"/>
 <wire x1="85.5" y1="138.1" x2="85.66" y2="138.26" width="1.016" layer="16"/>
-<wire x1="16.5" y1="106" x2="45.745" y2="106" width="1.016" layer="16"/>
-<wire x1="45.745" y1="106" x2="46.27" y2="105.475" width="1.016" layer="16"/>
 <contactref element="RTC" pad="5"/>
 <wire x1="83" y1="89.92" x2="87.08" y2="89.92" width="1.016" layer="16"/>
 <wire x1="87.08" y1="89.92" x2="88" y2="89" width="1.016" layer="16"/>
-</signal>
-<signal name="VIN">
 <contactref element="U$4" pad="VIN"/>
+<wire x1="15.17" y1="104.67" x2="18.5" y2="108" width="1.016" layer="16"/>
+<wire x1="18.5" y1="108" x2="46.255" y2="108" width="1.016" layer="16"/>
+<wire x1="46.255" y1="108" x2="46.27" y2="108.015" width="1.016" layer="16"/>
+<wire x1="46.27" y1="108.015" x2="61.015" y2="108.015" width="1.016" layer="16"/>
+<wire x1="61.015" y1="108.015" x2="62.5" y2="109.5" width="1.016" layer="16"/>
 </signal>
 <signal name="EN">
 <contactref element="MS1" pad="27"/>

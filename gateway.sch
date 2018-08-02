@@ -9807,11 +9807,6 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <label x="139.7" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="276.86" y1="162.56" x2="266.7" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="3V3"/>
-<label x="261.62" y="162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="162.56" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="INA219" gate="G$1" pin="VCC"/>
 </segment>
@@ -9825,6 +9820,10 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <segment>
 <pinref part="RTC" gate="A" pin="5"/>
 <wire x1="195.58" y1="101.6" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<wire x1="276.86" y1="165.1" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN" class="0">
