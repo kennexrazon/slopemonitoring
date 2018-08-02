@@ -9167,10 +9167,8 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="RTC" library="pinhead" deviceset="PINHD-1X5" device=""/>
-<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -9178,7 +9176,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="Q1" library="transistor-small-signal" deviceset="BSS123" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -9262,10 +9259,8 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="GND1" gate="1" x="71.12" y="99.06" rot="R270"/>
 <instance part="GND2" gate="1" x="147.32" y="154.94" rot="R270"/>
 <instance part="GND3" gate="1" x="182.88" y="101.6" rot="R90"/>
-<instance part="+3V1" gate="G$1" x="180.34" y="106.68"/>
 <instance part="+3V2" gate="G$1" x="76.2" y="119.38"/>
 <instance part="RTC" gate="A" x="193.04" y="96.52" rot="R180"/>
-<instance part="+3V3" gate="G$1" x="195.58" y="109.22"/>
 <instance part="GND4" gate="1" x="210.82" y="91.44" rot="R90"/>
 <instance part="GND5" gate="1" x="71.12" y="104.14" rot="R270"/>
 <instance part="GND6" gate="1" x="205.74" y="55.88"/>
@@ -9273,7 +9268,6 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="Q1" gate="G$1" x="198.12" y="58.42" rot="MR270"/>
 <instance part="GND7" gate="1" x="71.12" y="109.22" rot="R270"/>
 <instance part="GND8" gate="1" x="233.68" y="134.62"/>
-<instance part="+3V5" gate="G$1" x="233.68" y="154.94"/>
 <instance part="C1" gate="G$1" x="241.3" y="147.32"/>
 <instance part="C2" gate="G$1" x="248.92" y="147.32"/>
 <instance part="P+1" gate="1" x="236.22" y="106.68"/>
@@ -9490,6 +9484,9 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="205.74" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="58.42" x2="208.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VIN-"/>
+<junction x="205.74" y="58.42"/>
+<junction x="208.28" y="58.42"/>
+<junction x="203.2" y="58.42"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -9576,11 +9573,6 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="86.36" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="3.3V@1"/>
-</segment>
-<segment>
-<pinref part="RTC" gate="A" pin="5"/>
-<wire x1="195.58" y1="101.6" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="RPI_SDA" class="0">
@@ -9821,16 +9813,18 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 </segment>
 <segment>
 <wire x1="162.56" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="INA219" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="RAIN" gate="G$1" pin="3"/>
 <wire x1="254" y1="129.54" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RTC" gate="A" pin="5"/>
+<wire x1="195.58" y1="101.6" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -10329,6 +10323,10 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="204,1,86.36,114.3,J1,3.3V,,,,"/>
+<approved hash="204,1,276.86,165.1,U$4,VIN,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
