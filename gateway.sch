@@ -9247,6 +9247,8 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="C4" library="rcl" deviceset="C-US" device="C1812"/>
 <part name="RAIN" library="jst" deviceset="B3B-ZR" device=""/>
 <part name="MAIN_SWITCH" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
+<part name="SOMS" library="jst" deviceset="B3B-ZR" device=""/>
+<part name="PAD41" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
 </parts>
 <sheets>
 <sheet>
@@ -9424,6 +9426,10 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="C4" gate="G$1" x="320.04" y="215.9"/>
 <instance part="RAIN" gate="G$1" x="246.38" y="127" rot="R180"/>
 <instance part="MAIN_SWITCH" gate="G$1" x="160.02" y="78.74" smashed="yes" rot="R90"/>
+<instance part="SOMS" gate="G$1" x="292.1" y="127" rot="R180"/>
+<instance part="PAD41" gate="G$1" x="322.58" y="127" smashed="yes" rot="R180">
+<attribute name="NAME" x="323.723" y="125.1458" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9551,6 +9557,10 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <segment>
 <pinref part="RAIN" gate="G$1" pin="1"/>
 <wire x1="254" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SOMS" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="124.46" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INA_VIN-" class="0">
@@ -9825,6 +9835,11 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VIN"/>
 <wire x1="276.86" y1="165.1" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SOMS" gate="G$1" pin="3"/>
+<wire x1="299.72" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
+<label x="299.72" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -10331,6 +10346,13 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="154.94" y1="73.66" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="MAIN_SWITCH" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="71.12" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="SOMS" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
+<pinref part="PAD41" gate="G$1" pin="P"/>
 </segment>
 </net>
 </nets>
