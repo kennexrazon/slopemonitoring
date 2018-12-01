@@ -6370,6 +6370,21 @@ P/N B3B-PH-K-S.  Mating plug PHR-3 &lt;br&gt;</description>
 <text x="0.875" y="-1.635" size="0.8128" layer="21" font="vector">1</text>
 <rectangle x1="-0.3175" y1="-2.06046875" x2="0.3175" y2="-1.42546875" layer="21"/>
 </package>
+<package name="JST_B3B-PH_HEADER">
+<description>3-pin JST PH Shrouded Header &lt;br&gt;
+2.0mm pitch &lt;br&gt;
+P/N B3B-PH-K-S.  Mating plug PHR-3 &lt;br&gt;</description>
+<pad name="P3" x="-1.9725" y="0.0475" drill="0.8" shape="long" rot="R90"/>
+<pad name="P2" x="0.0275" y="0.0475" drill="0.8" shape="long" rot="R90"/>
+<pad name="P1" x="2.0275" y="0.0475" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-3.9225" y1="2.3825" x2="3.9275" y2="2.3825" width="0.127" layer="21"/>
+<wire x1="3.9275" y1="2.3825" x2="3.9275" y2="-2.1175" width="0.127" layer="21"/>
+<wire x1="3.9275" y1="-2.1175" x2="-3.9225" y2="-2.1175" width="0.127" layer="21"/>
+<wire x1="-3.9225" y1="-2.1175" x2="-3.9225" y2="2.3825" width="0.127" layer="21"/>
+<rectangle x1="-1.9725" y1="-2.1175" x2="2.0275" y2="-1.6175" layer="21"/>
+<text x="-3.9725" y="2.6825" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="2.145" y="-1.635" size="0.8128" layer="21" font="vector">1</text>
+</package>
 </packages>
 <symbols>
 <symbol name="JST_PHR-2">
@@ -6387,6 +6402,23 @@ Mating connector PHR-2 &lt;br&gt;</description>
 <circle x="-2.54" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
 <circle x="-2.54" y="0" radius="0.915809375" width="0.254" layer="94"/>
 </symbol>
+<symbol name="JST_PHR-3">
+<description>3-pin JST PH Shrouded Header, top entry &lt;br&gt;
+P/N B3B-PH-K-S &lt;br&gt;
+Mating connector PHR-3 &lt;br&gt;</description>
+<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<text x="-2.54" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.858" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<circle x="0" y="2.54" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JST-PH_2-PIN_HEADER">
@@ -6402,6 +6434,26 @@ Mating cable assembly: Sparkfun &lt;a href="http://www.sparkfun.com/products/991
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST-PH_3-PIN_HEADER">
+<description>3-pin JST PH Shrouded Header, top entry &lt;br&gt;
+P/N B3B-PH-K-S &lt;br&gt;
+Mating connector PHR-3 &lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="JST_PHR-3" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST_B3B-PH_HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+<connect gate="G$1" pin="3" pad="P3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6922,89 +6974,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="con-wago-500">
-<description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
-Grid 5.00 mm&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="W237-103">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<wire x1="4.093" y1="-2.255" x2="5.897" y2="-0.299" width="0.254" layer="51"/>
-<wire x1="-0.911" y1="-2.331" x2="0.994" y2="-0.299" width="0.254" layer="51"/>
-<wire x1="-5.991" y1="-2.306" x2="-3.984" y2="-0.299" width="0.254" layer="51"/>
-<wire x1="-7.489" y1="-5.481" x2="7.497" y2="-5.481" width="0.1524" layer="21"/>
-<wire x1="7.497" y1="3.714" x2="7.497" y2="3.511" width="0.1524" layer="21"/>
-<wire x1="7.497" y1="3.714" x2="-7.489" y2="3.714" width="0.1524" layer="21"/>
-<wire x1="-7.489" y1="-5.481" x2="-7.489" y2="-3.093" width="0.1524" layer="21"/>
-<wire x1="-7.489" y1="-3.093" x2="-5.889" y2="-3.093" width="0.1524" layer="21"/>
-<wire x1="-5.889" y1="-3.093" x2="-4.111" y2="-3.093" width="0.1524" layer="51"/>
-<wire x1="-4.111" y1="-3.093" x2="-0.885" y2="-3.093" width="0.1524" layer="21"/>
-<wire x1="0.893" y1="-3.093" x2="4.119" y2="-3.093" width="0.1524" layer="21"/>
-<wire x1="5.897" y1="-3.093" x2="7.497" y2="-3.093" width="0.1524" layer="21"/>
-<wire x1="-7.489" y1="-3.093" x2="-7.489" y2="3.511" width="0.1524" layer="21"/>
-<wire x1="7.497" y1="-3.093" x2="7.497" y2="-5.481" width="0.1524" layer="21"/>
-<wire x1="7.497" y1="3.511" x2="-7.489" y2="3.511" width="0.1524" layer="21"/>
-<wire x1="7.497" y1="3.511" x2="7.497" y2="-3.093" width="0.1524" layer="21"/>
-<wire x1="-7.489" y1="3.511" x2="-7.489" y2="3.714" width="0.1524" layer="21"/>
-<wire x1="-0.885" y1="-3.093" x2="0.893" y2="-3.093" width="0.1524" layer="51"/>
-<wire x1="4.119" y1="-3.093" x2="5.897" y2="-3.093" width="0.1524" layer="51"/>
-<circle x="-5" y="-1.29" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="5.0076" y="-1.29" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="-5" y="2.1898" radius="0.508" width="0.1524" layer="21"/>
-<circle x="5.0076" y="2.1898" radius="0.508" width="0.1524" layer="21"/>
-<circle x="0.0038" y="-1.29" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="0.0038" y="2.1898" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-5" y="-1.29" drill="1.1938" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-1.29" drill="1.1938" shape="long" rot="R90"/>
-<pad name="3" x="5" y="-1.29" drill="1.1938" shape="long" rot="R90"/>
-<text x="-6.905" y="0.615" size="1.27" layer="51" ratio="10">1</text>
-<text x="-1.8504" y="0.5642" size="1.27" layer="51" ratio="10">2</text>
-<text x="3.1534" y="0.615" size="1.27" layer="51" ratio="10">3</text>
-<text x="-5.3048" y="-4.9476" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.6858" y="-7.4622" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="KL">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="KL+V">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="W237-103" prefix="X" uservalue="yes">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="KL" x="0" y="0" addlevel="always"/>
-<gate name="-3" symbol="KL+V" x="0" y="-5.08" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="W237-103">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-<connect gate="-3" pin="KL" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="237-103" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="18M7116" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="holes" urn="urn:adsk.eagle:library:237">
 <description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -7376,11 +7345,11 @@ Grid 5.00 mm&lt;p&gt;
 <part name="C3" library="rcl" deviceset="C-US" device="C1812"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C1812"/>
 <part name="MAIN_SWITCH" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
-<part name="SOMS" library="con-wago-500" deviceset="W237-103" device=""/>
 <part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
 <part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
 <part name="H7" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
 <part name="H8" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
+<part name="SOMS" library="SRG" deviceset="JST-PH_3-PIN_HEADER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7461,13 +7430,11 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="C3" gate="G$1" x="309.88" y="215.9"/>
 <instance part="C4" gate="G$1" x="320.04" y="215.9"/>
 <instance part="MAIN_SWITCH" gate="G$1" x="160.02" y="101.6" smashed="yes" rot="R90"/>
-<instance part="SOMS" gate="-1" x="287.02" y="132.08"/>
-<instance part="SOMS" gate="-2" x="287.02" y="127"/>
-<instance part="SOMS" gate="-3" x="287.02" y="121.92"/>
 <instance part="H5" gate="G$1" x="20.32" y="63.5"/>
 <instance part="H6" gate="G$1" x="20.32" y="55.88"/>
 <instance part="H7" gate="G$1" x="20.32" y="71.12"/>
 <instance part="H8" gate="G$1" x="20.32" y="78.74"/>
+<instance part="SOMS" gate="G$1" x="271.78" y="127" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -7507,10 +7474,8 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="124.46" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="SOMS" gate="-3" pin="KL"/>
-<wire x1="299.72" y1="124.46" x2="299.72" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="121.92" x2="292.1" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="SOMS" gate="G$1" pin="1"/>
+<wire x1="276.86" y1="124.46" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BATT" gate="G$1" pin="1"/>
@@ -7624,11 +7589,9 @@ Grid 5.00 mm&lt;p&gt;
 <label x="139.7" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="294.64" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
 <label x="299.72" y="129.54" size="1.778" layer="95"/>
-<wire x1="294.64" y1="129.54" x2="294.64" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="SOMS" gate="-1" pin="KL"/>
-<wire x1="294.64" y1="132.08" x2="292.1" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="SOMS" gate="G$1" pin="3"/>
+<wire x1="276.86" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -7672,9 +7635,9 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="154.94" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="292.1" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
 <label x="322.58" y="127" size="1.778" layer="95" rot="R180"/>
-<pinref part="SOMS" gate="-2" pin="KL"/>
+<pinref part="SOMS" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GPIOA4" class="0">
