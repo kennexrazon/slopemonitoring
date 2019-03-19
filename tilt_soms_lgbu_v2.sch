@@ -6411,115 +6411,6 @@ Mating cable assembly: Sparkfun &lt;a href="http://www.sparkfun.com/products/991
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Switches">
-<description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
-In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="DIPSWITCH-04-SMD">
-<description>&lt;h3&gt;4-Position DIP Switch - SMD, 0.1"-Pitch&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.ctscorp.com/wp-content/uploads/2015/11/219.pdf"&gt;Datasheet&lt;/a&gt; (219-4MST)&lt;/p&gt;</description>
-<smd name="1" x="-3.81" y="4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="2" x="-1.27" y="4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="3" x="1.27" y="4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="4" x="3.81" y="4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="5" x="3.81" y="-4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="6" x="1.27" y="-4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="7" x="-1.27" y="-4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<smd name="8" x="-3.81" y="-4.445" dx="2.54" dy="1.27" layer="1" rot="R90"/>
-<wire x1="5.715" y1="3.175" x2="5.715" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-5.715" y1="-3.175" x2="-5.715" y2="3.175" width="0.2032" layer="21"/>
-<text x="-5.842" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
-<text x="5.842" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
-<wire x1="-4.699" y1="-3.175" x2="-5.715" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-3.175" x2="4.699" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-3.175" x2="-2.921" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="0.381" y1="-3.175" x2="-0.381" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="2.921" y1="-3.175" x2="2.159" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="4.699" y1="3.175" x2="5.715" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-5.715" y1="3.175" x2="-4.699" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="2.159" y1="3.175" x2="2.921" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-0.381" y1="3.175" x2="0.381" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-2.921" y1="3.175" x2="-2.159" y2="3.175" width="0.2032" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DIPSWITCH-04">
-<description>&lt;h3&gt;4-Position DIP Switch&lt;/h3&gt;
-&lt;p&gt;4-circuit DIP (dual inline package) switch. Commonly used to physcially set a circuit's behavior.&lt;/p&gt;</description>
-<pin name="1B" x="2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="2B" x="5.08" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="3B" x="7.62" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="4B" x="10.16" y="-2.54" visible="pad" length="short" rot="R90"/>
-<pin name="1A" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="2A" x="5.08" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="3A" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="4A" x="10.16" y="10.16" visible="pad" length="short" rot="R270"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.032" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="4.572" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="7.112" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="2.54" x2="9.652" y2="5.588" width="0.1524" layer="94"/>
-<wire x1="0" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
-<text x="0.508" y="0.508" size="1.27" layer="94">1</text>
-<text x="3.048" y="0.508" size="1.27" layer="94">2</text>
-<text x="5.588" y="0.508" size="1.27" layer="94">3</text>
-<text x="8.128" y="0.508" size="1.27" layer="94">4</text>
-<text x="-0.254" y="0" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
-<text x="12.954" y="0" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIP-04" prefix="S">
-<description>&lt;h3&gt;4-Position DIP Switch&lt;/h3&gt;
-&lt;p&gt;4-circuit DIP (dual inline package) switch. Commonly used to physcially set a circuit's behavior.&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;&lt;li&gt;&lt;em&gt;Prototype Part&lt;/em&gt;&lt;/li&gt;&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="DIPSWITCH-04" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="DIPSWITCH-04-SMD">
-<connects>
-<connect gate="G$1" pin="1A" pad="1"/>
-<connect gate="G$1" pin="1B" pad="8"/>
-<connect gate="G$1" pin="2A" pad="2"/>
-<connect gate="G$1" pin="2B" pad="7"/>
-<connect gate="G$1" pin="3A" pad="3"/>
-<connect gate="G$1" pin="3B" pad="6"/>
-<connect gate="G$1" pin="4A" pad="4"/>
-<connect gate="G$1" pin="4B" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-12418"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="wirepad">
 <description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -7083,11 +6974,7 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="BATT" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
 <part name="U$3" library="edc_modules" deviceset="TPL5110_BREAKOUT" device=""/>
-<part name="S1" library="SparkFun-Switches" deviceset="DIP-04" device="SMD"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="0204/7"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0204/7"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0204/7"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="0204/7"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="0309/12"/>
 <part name="FRAME2" library="frames" deviceset="DINA4_L" device=""/>
 <part name="U$4" library="edc_modules" deviceset="BNO05_BREAKOUT" device=""/>
 <part name="PAD13" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value="WIREPADSMD1,27-254"/>
@@ -7114,6 +7001,7 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="C4" library="rcl" deviceset="C-US" device="C1812"/>
 <part name="MAIN_SWITCH" library="SRG" deviceset="JST-PH_2-PIN_HEADER" device=""/>
 <part name="SOMS" library="Rembrandt Electronics - Terminal Block 3-5mm v1-0" deviceset="TERMINAL-BLOCK-3.5MM-3-PIN" device="-LONG-PAD"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7126,11 +7014,7 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="GND6" gate="1" x="144.78" y="88.9"/>
 <instance part="BATT" gate="G$1" x="137.16" y="93.98" smashed="yes" rot="R180"/>
 <instance part="U$3" gate="G$1" x="96.52" y="137.16"/>
-<instance part="S1" gate="G$1" x="127" y="50.8" rot="R180"/>
-<instance part="R1" gate="G$1" x="116.84" y="33.02" rot="R90"/>
-<instance part="R2" gate="G$1" x="119.38" y="33.02" rot="R90"/>
-<instance part="R3" gate="G$1" x="121.92" y="33.02" rot="R90"/>
-<instance part="R4" gate="G$1" x="124.46" y="33.02" rot="R90"/>
+<instance part="R1" gate="G$1" x="121.92" y="40.64" rot="R90"/>
 <instance part="FRAME2" gate="G$2" x="325.12" y="0"/>
 <instance part="U$4" gate="G$1" x="281.94" y="149.86"/>
 <instance part="PAD13" gate="G$1" x="208.28" y="261.62" smashed="yes" rot="R180">
@@ -7190,13 +7074,14 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <instance part="PAD40" gate="G$1" x="317.5" y="160.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="318.643" y="158.1658" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="FUSE1" gate="A" x="172.72" y="96.52"/>
+<instance part="FUSE1" gate="A" x="172.72" y="93.98"/>
 <instance part="C3" gate="G$1" x="309.88" y="215.9"/>
 <instance part="C4" gate="G$1" x="320.04" y="215.9"/>
 <instance part="MAIN_SWITCH" gate="G$1" x="160.02" y="101.6" smashed="yes" rot="R90"/>
 <instance part="SOMS" gate="-1" x="284.48" y="93.98" rot="R180"/>
 <instance part="SOMS" gate="-2" x="284.48" y="101.6" rot="R180"/>
 <instance part="SOMS" gate="-3" x="284.48" y="109.22" rot="R180"/>
+<instance part="GND1" gate="1" x="121.92" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -7214,16 +7099,9 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="27.94" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<junction x="119.38" y="27.94"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
-<junction x="121.92" y="27.94"/>
-<wire x1="121.92" y1="27.94" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="35.56" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <label x="121.92" y="22.86" size="1.778" layer="95"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="276.86" y1="160.02" x2="266.7" y2="160.02" width="0.1524" layer="91"/>
@@ -7281,7 +7159,8 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </segment>
 <segment>
 <pinref part="FUSE1" gate="A" pin="2"/>
-<wire x1="177.8" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="187.96" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DELAY" class="0">
@@ -7291,46 +7170,11 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <label x="114.3" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="4B"/>
-<pinref part="S1" gate="G$1" pin="3B"/>
-<wire x1="116.84" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="2B"/>
-<wire x1="119.38" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
-<junction x="119.38" y="53.34"/>
-<pinref part="S1" gate="G$1" pin="1B"/>
-<wire x1="121.92" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
-<junction x="121.92" y="53.34"/>
+<wire x1="121.92" y1="45.72" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="53.34" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
-<junction x="124.46" y="53.34"/>
 <label x="127" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="4A"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="40.64" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="3A"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="40.64" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="2A"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="40.64" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="1A"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="40.64" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
+<junction x="121.92" y="45.72"/>
 </segment>
 </net>
 <net name="DONE_PIN" class="0">
@@ -7600,9 +7444,8 @@ Number of pins: &lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <net name="N$4" class="0">
 <segment>
 <pinref part="MAIN_SWITCH" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="93.98" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="93.98" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="FUSE1" gate="A" pin="1"/>
-<wire x1="167.64" y1="91.44" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
