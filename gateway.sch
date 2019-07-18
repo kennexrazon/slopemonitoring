@@ -7731,6 +7731,9 @@ part number 2062-2P from STA</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="BATT" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR"/>
+<part name="ALARM" library="SRG" deviceset="JST-PH_3-PIN_HEADER" device=""/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7782,6 +7785,9 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <instance part="GND2" gate="1" x="134.62" y="149.86"/>
 <instance part="+3V6" gate="G$1" x="71.12" y="121.92"/>
 <instance part="BATT" gate="G$1" x="132.08" y="68.58" rot="MR180"/>
+<instance part="ALARM" gate="G$1" x="215.9" y="121.92" rot="R180"/>
+<instance part="GND12" gate="1" x="226.06" y="114.3"/>
+<instance part="P+3" gate="1" x="226.06" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -7895,6 +7901,12 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="RFM9X_LORA" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="149.86" y1="152.4" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ALARM" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="119.38" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="119.38" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8024,6 +8036,12 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <wire x1="243.84" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="PTC2" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="ALARM" gate="G$1" pin="3"/>
+<wire x1="220.98" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="124.46" x2="226.06" y2="127" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -8133,6 +8151,18 @@ http://www.ti.com/lit/an/slva139/slva139.pdf</text>
 <pinref part="RFM9X_LORA" gate="G$1" pin="MOSI"/>
 <wire x1="149.86" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 <label x="139.7" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ALARM_TRIG" class="0">
+<segment>
+<pinref part="PCB2" gate="G$1" pin="GPIO4"/>
+<wire x1="81.28" y1="142.24" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<label x="63.5" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ALARM" gate="G$1" pin="2"/>
+<wire x1="220.98" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
+<label x="223.52" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
