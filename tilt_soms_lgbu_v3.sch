@@ -6257,14 +6257,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
 <wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
 <circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<smd name="1" x="-0.95" y="-1.55" dx="0.6" dy="1.7" layer="1"/>
+<smd name="2" x="0" y="-1.55" dx="0.6" dy="1.7" layer="1"/>
+<smd name="3" x="0.95" y="-1.55" dx="0.6" dy="1.7" layer="1"/>
+<smd name="4" x="0.95" y="1.55" dx="0.6" dy="1.7" layer="1"/>
+<smd name="5" x="0" y="1.55" dx="0.6" dy="1.7" layer="1"/>
+<smd name="6" x="-0.95" y="1.55" dx="0.6" dy="1.7" layer="1"/>
+<text x="-1.397" y="-3.472" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="2.502" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
 <rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
 <rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
