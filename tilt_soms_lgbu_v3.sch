@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6218,34 +6218,29 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <library name="edc_modules">
 <packages>
 <package name="SCL3300-D01">
-<smd name="1" x="-2.5" y="-3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="2" x="-1.5" y="-3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="3" x="-0.5" y="-3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="4" x="0.5" y="-3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="5" x="1.5" y="-3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="6" x="2.5" y="-3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="12" x="-2.5" y="3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="11" x="-1.5" y="3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="10" x="-0.5" y="3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="9" x="0.5" y="3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="8" x="1.5" y="3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<smd name="7" x="2.5" y="3.695" dx="1.48" dy="0.61" layer="1" rot="R90"/>
-<wire x1="0" y1="-3.5" x2="4.046" y2="-3.5" width="0.127" layer="21"/>
+<smd name="1" x="-2.5" y="-3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="2" x="-1.5" y="-3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="3" x="-0.5" y="-3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="-3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="5" x="1.5" y="-3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="6" x="2.5" y="-3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="12" x="-2.5" y="3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="11" x="-1.5" y="3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="10" x="-0.5" y="3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="9" x="0.5" y="3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="8" x="1.5" y="3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<smd name="7" x="2.5" y="3.935" dx="1.96" dy="0.61" layer="1" rot="R90"/>
+<wire x1="-3.8" y1="-3.5" x2="4.046" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="4.046" y1="-3.5" x2="4.3" y2="-3.246" width="0.127" layer="21" curve="90"/>
-<wire x1="4.3" y1="-3.246" x2="4.3" y2="0" width="0.127" layer="21"/>
-<wire x1="4.3" y1="0" x2="4.3" y2="3.246" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-3.246" x2="4.3" y2="3.246" width="0.127" layer="21"/>
 <wire x1="4.3" y1="3.246" x2="4.046" y2="3.5" width="0.127" layer="21" curve="90"/>
-<wire x1="4.046" y1="3.5" x2="0" y2="3.5" width="0.127" layer="21"/>
-<wire x1="0" y1="3.5" x2="-4.046" y2="3.5" width="0.127" layer="21"/>
+<wire x1="4.046" y1="3.5" x2="-4.046" y2="3.5" width="0.127" layer="21"/>
 <wire x1="-4.046" y1="3.5" x2="-4.3" y2="3.246" width="0.127" layer="21" curve="90"/>
-<wire x1="-4.3" y1="3.246" x2="-4.3" y2="0" width="0.127" layer="21"/>
-<wire x1="-4.3" y1="0" x2="-4.3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="3.246" x2="-4.3" y2="-3" width="0.127" layer="21"/>
 <wire x1="-4.3" y1="-3" x2="-3.8" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-3.8" y1="-3.5" x2="0" y2="-3.5" width="0.127" layer="21"/>
 <text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="-2.54" x2="3.81" y2="2.54" layer="39"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="-1.27" x2="0" y2="-1.27" width="0.127" layer="51"/>
 <wire x1="-2.2225" y1="0.9525" x2="-2.54" y2="1.27" width="0.127" layer="51"/>
